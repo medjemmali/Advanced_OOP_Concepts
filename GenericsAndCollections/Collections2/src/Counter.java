@@ -22,7 +22,7 @@ appear in the array as values. Check the instructions. */
       /* TODO 
 This just returns the specific count for an element. It is a wrapper
 for a getting the value of the HashMap given the key "element" */
-        return (Integer) counts.get(element);
+        return counts.get(element);
 
     }
 

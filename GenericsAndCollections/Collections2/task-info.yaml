@@ -112,7 +112,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: '  return counts.get(element'
-  - offset: 924
+  - offset: 914
     length: 386
     placeholder_text: "/* TODO \nReturns the most frequent key in the HashMap*/"
     initial_state:
@@ -149,5 +149,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 01 Mar 2022 05:21:49 UTC
+  time: Tue, 01 Mar 2022 05:24:17 UTC
 record: -1
