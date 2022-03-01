@@ -6,10 +6,11 @@ public class Deck implements Iterable<Card>{
     private List<Card> deck;
     private String[] suits = {"Hearts","Clubs","Diamonds","Spades"};
     public Deck() {
-/* TODO 
+/* TODO
 This constructor initializes the deck variable with
 all the cards of a deck, except a joker.
-The suits array may help you.*/        }
+The suits array may help you.*/
+
     }
 
     public Card dealCard(){
