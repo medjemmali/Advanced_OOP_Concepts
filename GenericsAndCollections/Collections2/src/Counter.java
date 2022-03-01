@@ -34,11 +34,17 @@ for a getting the value of the HashMap given the key "element" */
     public E mostFrequent() {
         /* TODO
 Returns the most frequent key in the HashMap*/
-        Map.Entry<E, Integer> maxEntry = null;
-        for(Map.Entry<E, Integer> entry : counts.entrySet()){
-            if(maxEntry == null || entry.getValue() > maxEntry.getValue())
-                maxEntry = entry;
+        E mostFreq = null;
+        Set<E> keys = counts.keySet();
+        int maximum = 0;
+        for (E key : keys) {
+            Integer value = counts.get(key);
+            if (value > maximum) {
+                maximum = value;
+                mostFreq = key;
+            }
         }
-        return maxEntry.getKey();
+        return mostFreq;
     }
+
 }
