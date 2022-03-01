@@ -72,7 +72,7 @@ files:
 - name: src/Counter.java
   visible: true
   placeholders:
-  - offset: 116
+  - offset: 94
     length: 12
     placeholder_text: "/* TODO \nThe HashMap should accomodate a generic class for\
       \ the keys and Integer for the value*/"
@@ -83,7 +83,7 @@ files:
     selected: true
     status: Solved
     encrypted_possible_answer: <E,Integer>
-  - offset: 171
+  - offset: 149
     length: 205
     placeholder_text: |-
       /* TODO
@@ -100,7 +100,7 @@ files:
       \            if(counts.containsKey(element)) {\n                counts.put(element,counts.get(element)+1);\n\
       \            } else {\n                counts.put(element,1);\n            }\n\
       \       "
-  - offset: 653
+  - offset: 631
     length: 143
     placeholder_text: "/* TODO \nThis just returns the specific count for an element.\
       \ It is a wrapper\nfor a getting the value of the HashMap given the key \"element\"\
@@ -112,7 +112,7 @@ files:
     selected: false
     status: Solved
     encrypted_possible_answer: '  return counts.get(element'
-  - offset: 946
+  - offset: 924
     length: 386
     placeholder_text: "/* TODO \nReturns the most frequent key in the HashMap*/"
     initial_state:
@@ -149,5 +149,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: Tue, 01 Mar 2022 05:18:31 UTC
+  time: Tue, 01 Mar 2022 05:21:49 UTC
 record: -1
