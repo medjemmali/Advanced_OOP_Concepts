@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-11T08:10:59" hostname="Macbookpros-MacBook-Pro.local" time="1.942">
+  <properties/>
+  <testcase name="testJSONStructure" classname="Tests" time="0.523"/>
+  <testcase name="testWriteDoc" classname="Tests" time="0.379"/>
+  <testcase name="testRetrieval" classname="Tests" time="0.265"/>
+  <testcase name="testReturningJsonDocs" classname="Tests" time="0.384"/>
+  <testcase name="testContent" classname="Tests" time="0.39"/>
+  <system-out><![CDATA[{birthday=1961-11-04, country={code=US, timezone=America/New_York, name=United States}, image={original=https://static.tvmaze.com/uploads/images/original_untouched/31/79799.jpg, medium=https://static.tvmaze.com/uploads/images/medium_portrait/31/79799.jpg}, gender=Male, _links={self={href=https://api.tvmaze.com/people/69979}}, name=Ralph Macchio, id=69979, deathday=null, updated=1641360075, url=https://www.tvmaze.com/people/69979/ralph-macchio}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
