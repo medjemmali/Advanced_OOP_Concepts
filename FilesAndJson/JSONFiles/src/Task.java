@@ -1,9 +1,9 @@
+import com.github.cliftonlabs.json_simple.JsonArray;
 import com.github.cliftonlabs.json_simple.JsonObject;
 import com.github.cliftonlabs.json_simple.Jsoner;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.text.ParseException;
 
 public class Task {
     public static void main(String[] args){
@@ -14,9 +14,25 @@ public class Task {
         System.out.println(db.getAvgReviews("Casa Enrique"));
     }
 
-    public JsonObject readJson(String fi/* TODO: create a JSON object with the contents of  "filename". You can use the method below to help you read the file. */
-       /* Put in the variable that should be returned. */em.exit(-1);
+    public String readFile(String filename) {
+        String contents = "";
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
+            String s = reader.readLine();
+            while (s != null) {
+                contents += s;
+                s = reader.readLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(-1);
         }
-        return content;
+        return contents;
     }
+
+    public JsonObject readJson(String filename){
+
+        String data = readFile(filename);
+        JsonObject document = (JsonObject)Jsoner.deserialize(data,new JsonObject());
+        return document;
+        }
 }
