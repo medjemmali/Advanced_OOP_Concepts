@@ -19,7 +19,6 @@ Check the method description. */
         try {
             while (c.odometer < distance)
             {
-                System.out.println("In the while loop: " + c.toString());
 
                 if(c.miles == 0) {
                     System.out.println("Charging");
