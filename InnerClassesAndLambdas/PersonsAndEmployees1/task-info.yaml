@@ -68,7 +68,7 @@ files:
   visible: true
   placeholders:
   - offset: 0
-    length: 97
+    length: 760
     placeholder_text: |-
       /* TODO */
       Import the java.time.LocalDate and java.time.Period classes.
@@ -77,13 +77,13 @@ files:
       length: 97
       offset: 0
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       import java.time.LocalDate;
       import java.time.Period;
-  - offset: 99
-    length: 28
+  - offset: 0
+    length: 760
     placeholder_text: |-
       /* TODO */
       Declare the class
@@ -91,11 +91,11 @@ files:
       length: 28
       offset: 99
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: public class Person {
-  - offset: 132
-    length: 134
+  - offset: 0
+    length: 760
     placeholder_text: |-
       /* TODO */
       Create two private member variables to hold the name and the birthDate of the employee. The birthdate has to be a LocalDate
@@ -103,13 +103,13 @@ files:
       length: 134
       offset: 132
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       private String name;
           private LocalDate birthDate;
-  - offset: 272
-    length: 166
+  - offset: 0
+    length: 760
     placeholder_text: |-
       /* TODO */
       Create a member inner class called Position with two
@@ -119,8 +119,8 @@ files:
       length: 166
       offset: 272
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       private class Position{
               String name;
@@ -135,8 +135,8 @@ files:
                   return name+":"+salary;
               }
           }
-  - offset: 444
-    length: 65
+  - offset: 767
+    length: 105
     placeholder_text: |-
       /* TODO */
       Create a member variable (of Person) of type Position.
@@ -144,11 +144,11 @@ files:
       length: 65
       offset: 444
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: private Position position;
-  - offset: 516
-    length: 174
+  - offset: 878
+    length: 173
     placeholder_text: |-
       /* TODO */
       Create a constructor for Person that takes in two Strings. A name and a birthdate in ISO format (yyyy-mm-dd) and sets the corresponding memeber variables correctly
@@ -156,8 +156,8 @@ files:
       length: 174
       offset: 516
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       /**
            * Creates a Person with a name and a birthdate.
@@ -168,8 +168,8 @@ files:
               this.name = name;
               this.birthDate = LocalDate.parse(birthDate);
           }
-  - offset: 696
-    length: 118
+  - offset: 1186
+    length: 117
     placeholder_text: |-
       /* TODO */
       Create a getAge method that returns the age in years of this person. You need to use the Period class here.
@@ -177,13 +177,13 @@ files:
       length: 118
       offset: 696
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |
       public int getAge(){
               return -1*Period.between(LocalDate.now(),this.birthDate).getYears();
           }
-  - offset: 819
+  - offset: 1495
     length: 125
     placeholder_text: |-
       /* TODO */
@@ -192,13 +192,13 @@ files:
       length: 125
       offset: 819
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       public void setPosition(String name, double salary){
               this.position = new Position(name,salary);
           }
-  - offset: 950
+  - offset: 1753
     length: 33
     placeholder_text: |-
       /* TODO */
@@ -207,13 +207,13 @@ files:
       length: 33
       offset: 950
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       public Position getPosition(){
               return this.position;
           }
-  - offset: 989
+  - offset: 1894
     length: 113
     placeholder_text: |-
       /* TODO */
@@ -222,14 +222,14 @@ files:
       length: 113
       offset: 989
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: |-
       public String toString(){
               return name+" - "+getAge()+":"+this.position;
           }
-  - offset: 1103
-    length: 53
+  - offset: 2235
+    length: 58
     placeholder_text: |-
       /* TODO */
       Finish closing curly braces and the class.
@@ -237,8 +237,8 @@ files:
       length: 53
       offset: 1103
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Solved
     encrypted_possible_answer: '}'
   text: |
     /* TODO */
@@ -275,5 +275,8 @@ files:
     /* TODO */
     Finish closing curly braces and the class.
   learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 09 Apr 2022 19:47:24 UTC
 record: -1
