@@ -11,6 +11,6 @@ content:
 - ThreadsAndConcurrency
 - InnerClassesAndLambdas
 mode: Study
+solutions_hidden: true
 vendor:
   name: Fdiacobe
-solutions_hidden: true

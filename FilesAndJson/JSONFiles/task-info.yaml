@@ -4,7 +4,7 @@ files:
   visible: true
   placeholders:
   - offset: 1045
-    length: 161
+    length: 229
     placeholder_text: '/* TODO: create a JSON object with the contents of  "filename".
       You can use the method below to help you read the file. */'
     initial_state:
@@ -17,7 +17,7 @@ files:
       lename) {
               JsonObject obj = (JsonObject) Jsoner.deserialize(readFile(filename), new JsonObject());
   - offset: 1047
-    length: 169
+    length: 237
     placeholder_text: /* Complete this using the parameter passed to this method.
       */
     initial_state:
@@ -43,7 +43,7 @@ files:
                   e.printStackTrace();
                   Syst
   - offset: 1047
-    length: 169
+    length: 237
     placeholder_text: /* Put in code to read the file line by line. */
     initial_state:
       length: 50
@@ -54,7 +54,7 @@ files:
     encrypted_possible_answer: /* Complete this using the parameter passed to this
       method. */
   - offset: 1047
-    length: 169
+    length: 237
     placeholder_text: /* Put in the variable that should be returned. */
     initial_state:
       length: 50

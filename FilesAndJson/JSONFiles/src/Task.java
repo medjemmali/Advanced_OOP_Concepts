@@ -32,7 +32,9 @@ public class Task {
     public JsonObject readJson(String filename){
 
         String data = readFile(filename);
+        System.out.println(data);
         JsonObject document = (JsonObject)Jsoner.deserialize(data,new JsonObject());
+        System.out.println(data);
         return document;
         }
 }
